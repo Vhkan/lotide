@@ -40,4 +40,4 @@ const callback = map(words, word => word[0]);
 console.log(callback);
 
 //making a test case
-console.log(assertArraysEqual(callback, ['g', 'c', 't', 'm', 't']));
+console.log(assertArraysEqual(callback, ['g', 'c', 't', 'm', 't'], ['g', 'c', 't', 'm', 't']));
