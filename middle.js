@@ -5,7 +5,7 @@ const middle = function (arr) {
 
   let mid = arr.length / 2;
   if (arr.length % 2 === 1) {
-    return arr [Math.floor(mid)];
+    return [arr[Math.floor(mid)]];
   } else {
     return [
       arr[mid - 1],
