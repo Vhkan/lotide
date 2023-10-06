@@ -1,6 +1,6 @@
 const assertEqual = require('./assertEqual');
 
-const tail = function (arr) { 
+const tail = function(arr) {
   const newArray = arr.slice(1);
   return newArray;
 };

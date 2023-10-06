@@ -1,4 +1,4 @@
-const assertArraysEqual = function (arr1, arr2) {
+const assertArraysEqual = function(arr1, arr2) {
   const result = eqArrays(arr1, arr2);
   if (result) {
     console.log("Arrays are equal.");
@@ -7,9 +7,7 @@ const assertArraysEqual = function (arr1, arr2) {
   }
 }
 
-// module.exports = assertArraysEqual;
-
-const eqArrays = function (arr1, arr2) {
+const eqArrays = function(arr1, arr2) {
   if (arr1.length !== arr2.length) {
     return false;
   }
@@ -23,24 +21,17 @@ const eqArrays = function (arr1, arr2) {
   return true;
 }
 
-// module.exports = eqArrays;
-
-
 const flatten = function(arr) {
   //returning a flattened version of the array
-  // const flatArr = arr.flat();
-  // return flatArr;
-
   let flatArr = [];
-  for(let i = 0; i < arr.length; i++) {
-    if(Array.isArray(arr[i])) {
+  for (let i = 0; i < arr.length; i++) {
+    if (Array.isArray(arr[i])) {
       flatArr = flatArr.concat(flatten(arr[i]));
     } else {
       flatArr.push(arr[i]);
     }
   }
   return flatArr;
-  // console.log(flatArr);
 };
 
 console.log(flatten([1, 2, [3, 4], 5, [6]])); // => [1, 2, 3, 4, 5, 6]
