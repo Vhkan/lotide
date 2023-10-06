@@ -42,3 +42,6 @@ console.log(callback);
 //test case
 console.log(assertArraysEqual(callback, ['g', 'c', 't', 'm', 't'], ['g', 'c', 't', 'm', 't']));
 console.log(map(words, word => word[1]));
+
+
+module.exports = map;
