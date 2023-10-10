@@ -1,12 +1,4 @@
-const assertEqual = function(actual, expected) {
-
-  if (actual === expected) {
-    console.log(`Assertion Passed: ${actual} === ${expected}`)
-    //return assertEqual;
-  } else if (actual !== expected) {
-    console.log(`Assertion Failed: ${actual} !== ${expected}`);
-  }
-}
+const assertEqual = require('./assertEqual');
 
 const eqObjects = function(object1, object2) {
   if (object1.key === object2.key && object1.value === object2.value) {
