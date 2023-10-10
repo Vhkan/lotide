@@ -1,7 +1,7 @@
 {
   "name": "@vhkan/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "The project was made as part of the code learning course",
   "main": "index.js",
   "directories": {
     "test": "test"
@@ -14,7 +14,7 @@
     "url": "git+https://github.com/Vhkan/lotide.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "vdm",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Vhkan/lotide/issues"
