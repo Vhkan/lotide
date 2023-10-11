@@ -1,23 +1,19 @@
 const countLettets = function(text) {
   //creating an empty object
-  let countedNumbers = {};
+  let countedLetts = {};
 
   const noSpacesText = text.split(' ').join("").toLowerCase();
 
   for (const char of noSpacesText) {
-    if (countedNumbers[char]) {
-      countedNumbers[char]++;
+    if (countedLetts[char]) {
+      countedLetts[char]++;
     }
     else {
-      countedNumbers[char] = 1;
+      countedLetts[char] = 1;
     }
   }
-  return countedNumbers;
+  return countedLetts;
 };
-
-
-// TEST CODE
-console.log(countLettets("Lighthouse labs"));
 
 module.exports = countLettets;
 
