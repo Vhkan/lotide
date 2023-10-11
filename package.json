@@ -23,5 +23,8 @@
   "devDependencies": {
     "chai": "^4.3.8",
     "mocha": "^9.2.2"
+  },
+  "dependencies": {
+    "@vhkan/lotide": "^1.1.0"
   }
 }
